@@ -12,6 +12,7 @@ struct User: Codable {
     var place: String
     var time: String
     var status: UserStatus
+    var isSelected: Bool
 }
 
 enum UserStatus: String, Codable {

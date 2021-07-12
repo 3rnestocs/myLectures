@@ -10,7 +10,8 @@ import UIKit
 class ContainerViewController: UIViewController {
 
     // MARK: - Outlet
-    @IBOutlet weak var headerContainerView: MyLecturesView!
+    @IBOutlet weak var myLecturesHeaderView: MyLecturesView!
+    @IBOutlet weak var selectedHeaderView: SelectedHeaderView!
     @IBOutlet weak var tabBarScrollView: UIScrollView!
     @IBOutlet weak var firstButton: MLButton!
     @IBOutlet weak var firstLineView: MLLineView!
@@ -44,6 +45,7 @@ class ContainerViewController: UIViewController {
     // MARK: - Helpers
     private func showNetworkingViewController() {
         if let networkingVC = NetworkingTableViewController(nibName: NetworkingTableViewController.identifier, bundle: nil) as NetworkingTableViewController? {
+            networkingVC.delegate = self
             self.currentViewController = networkingVC
             self.addControllerToContainer(viewController: self.currentViewController, containerView: self.tableContainerView)
         }
@@ -89,3 +91,15 @@ class ContainerViewController: UIViewController {
     }
 }
 
+extension ContainerViewController: NetworkingTableViewControllerDelegate {
+    func shareSelectedCells(_ indexArray: [IndexPath]) {
+        NotificationCenter.default.post(name: .didSelectCells, object: indexArray.count)
+        if !indexArray.isEmpty {
+            self.myLecturesHeaderView.isHidden = true
+            self.selectedHeaderView.isHidden = false
+        } else {
+            self.myLecturesHeaderView.isHidden = false
+            self.selectedHeaderView.isHidden = true
+        }
+    }
+}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectedHeaderView" customModule="myLectures" customModuleProvider="target">
+            <connections>
+                <outlet property="addButton" destination="YEv-63-xpe" id="1cB-Es-EGV"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="E4g-zf-uIl"/>
+                <outlet property="deleteButton" destination="Dwa-Vw-g4c" id="DAp-jN-RJj"/>
+                <outlet property="itemNumberLabel" destination="Xy2-IL-Erq" id="KW0-uf-j0z"/>
+                <outlet property="removeAllButton" destination="D9g-LC-pQ7" id="dGT-6M-1WM"/>
+                <outlet property="shareButton" destination="eag-UV-fEp" id="Qy1-VZ-tIW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="545" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9g-LC-pQ7">
+                    <rect key="frame" x="24" y="58" width="24" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="4iz-TI-dO8"/>
+                        <constraint firstAttribute="width" constant="24" id="9JL-Qp-1AL"/>
+                    </constraints>
+                    <color key="tintColor" name="Aqua"/>
+                    <state key="normal">
+                        <imageReference key="image" image="removeSign" symbolScale="large"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="removeAllButtonTouched:" destination="-1" eventType="touchUpInside" id="kH2-jA-rlP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xy2-IL-Erq">
+                    <rect key="frame" x="80" y="63.5" width="47" height="21.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" name="Aqua"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sXX-GP-8vo">
+                    <rect key="frame" x="401" y="58" width="96" height="32"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwa-Vw-g4c">
+                            <rect key="frame" x="0.0" y="0.0" width="24" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="W1f-Wc-JQI"/>
+                                <constraint firstAttribute="width" constant="24" id="aEp-Bf-CCX"/>
+                            </constraints>
+                            <color key="tintColor" name="Aqua"/>
+                            <state key="normal">
+                                <imageReference key="image" image="trashSign" symbolScale="large"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </state>
+                            <connections>
+                                <action selector="deleteButtonTouched:" destination="-1" eventType="touchUpInside" id="EiV-6a-MfR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEv-63-xpe">
+                            <rect key="frame" x="32" y="0.0" width="28" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="9QZ-su-Xj9"/>
+                                <constraint firstAttribute="width" constant="28" id="Uwb-2A-szd"/>
+                            </constraints>
+                            <color key="tintColor" name="Aqua"/>
+                            <state key="normal">
+                                <imageReference key="image" image="addSign" symbolScale="large"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </state>
+                            <connections>
+                                <action selector="addButtonTouched:" destination="-1" eventType="touchUpInside" id="sl0-Ie-gzQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eag-UV-fEp">
+                            <rect key="frame" x="68" y="0.0" width="28" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="6FE-Z6-jfV"/>
+                                <constraint firstAttribute="height" constant="32" id="L4e-DJ-mIE"/>
+                            </constraints>
+                            <color key="tintColor" name="Aqua"/>
+                            <state key="normal">
+                                <imageReference key="image" image="shareSign" symbolScale="large"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </state>
+                            <connections>
+                                <action selector="shareButtonTouched:" destination="-1" eventType="touchUpInside" id="hap-LP-i2I"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Xy2-IL-Erq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="09Q-KF-kIl"/>
+                <constraint firstItem="sXX-GP-8vo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="HiD-0M-TPW"/>
+                <constraint firstItem="D9g-LC-pQ7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MPQ-76-dGW"/>
+                <constraint firstItem="Xy2-IL-Erq" firstAttribute="leading" secondItem="D9g-LC-pQ7" secondAttribute="trailing" constant="32" id="TWI-NF-O30"/>
+                <constraint firstItem="D9g-LC-pQ7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="Tmd-QL-jse"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sXX-GP-8vo" secondAttribute="trailing" constant="48" id="wbY-5O-e1l"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-10.869565217391305" y="333.48214285714283"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="addSign" width="62" height="64"/>
+        <image name="removeSign" width="32" height="38"/>
+        <image name="shareSign" width="80" height="74"/>
+        <image name="trashSign" width="54" height="66"/>
+        <namedColor name="Aqua">
+            <color red="0.0" green="0.41176470588235292" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -31,6 +31,8 @@
 		8DE97796269BC35E008E61F4 /* RecognitionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE97794269BC35E008E61F4 /* RecognitionTableViewController.xib */; };
 		8DE9779A269BC37E008E61F4 /* RecognitionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97798269BC37E008E61F4 /* RecognitionTableViewCell.swift */; };
 		8DE9779B269BC37E008E61F4 /* RecognitionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE97799269BC37E008E61F4 /* RecognitionTableViewCell.xib */; };
+		8DEFF7B2269C967600CC4861 /* SelectedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFF7B1269C967600CC4861 /* SelectedHeaderView.swift */; };
+		8DEFF7B6269C967D00CC4861 /* SelectedHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEFF7B5269C967D00CC4861 /* SelectedHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		8DE97794269BC35E008E61F4 /* RecognitionTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecognitionTableViewController.xib; sourceTree = "<group>"; };
 		8DE97798269BC37E008E61F4 /* RecognitionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionTableViewCell.swift; sourceTree = "<group>"; };
 		8DE97799269BC37E008E61F4 /* RecognitionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecognitionTableViewCell.xib; sourceTree = "<group>"; };
+		8DEFF7B1269C967600CC4861 /* SelectedHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedHeaderView.swift; sourceTree = "<group>"; };
+		8DEFF7B5269C967D00CC4861 /* SelectedHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 		8DE97765269BB55F008E61F4 /* HeaderViews */ = {
 			isa = PBXGroup;
 			children = (
+				8DEFF7B0269C965600CC4861 /* SelectedHeader */,
 				8DE97766269BB575008E61F4 /* MyLectures */,
 			);
 			path = HeaderViews;
@@ -241,6 +246,15 @@
 			path = ControlCell;
 			sourceTree = "<group>";
 		};
+		8DEFF7B0269C965600CC4861 /* SelectedHeader */ = {
+			isa = PBXGroup;
+			children = (
+				8DEFF7B1269C967600CC4861 /* SelectedHeaderView.swift */,
+				8DEFF7B5269C967D00CC4861 /* SelectedHeaderView.xib */,
+			);
+			path = SelectedHeader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,6 +317,7 @@
 				8DE97787269BC2F1008E61F4 /* ControlTableViewCell.xib in Resources */,
 				8DE9779B269BC37E008E61F4 /* RecognitionTableViewCell.xib in Resources */,
 				8DE97796269BC35E008E61F4 /* RecognitionTableViewController.xib in Resources */,
+				8DEFF7B6269C967D00CC4861 /* SelectedHeaderView.xib in Resources */,
 				8DE9774E269BA6EC008E61F4 /* Assets.xcassets in Resources */,
 				8DE97778269BBAF7008E61F4 /* NetworkingTableViewCell.xib in Resources */,
 				8DE9774C269BA6EA008E61F4 /* Main.storyboard in Resources */,
@@ -326,6 +341,7 @@
 				8DE97771269BBA47008E61F4 /* NetworkingTableViewController.swift in Sources */,
 				8DE9779A269BC37E008E61F4 /* RecognitionTableViewCell.swift in Sources */,
 				8D852A43269C747C00093817 /* UserModel.swift in Sources */,
+				8DEFF7B2269C967600CC4861 /* SelectedHeaderView.swift in Sources */,
 				8DE97777269BBAF7008E61F4 /* NetworkingTableViewCell.swift in Sources */,
 				8DE97786269BC2F1008E61F4 /* ControlTableViewCell.swift in Sources */,
 				8DE9776B269BB5A2008E61F4 /* MyLecturesView.swift in Sources */,
