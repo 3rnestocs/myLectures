@@ -46,6 +46,7 @@ class ContainerViewController: UIViewController {
     private func showNetworkingViewController() {
         if let networkingVC = NetworkingTableViewController(nibName: NetworkingTableViewController.identifier, bundle: nil) as NetworkingTableViewController? {
             networkingVC.delegate = self
+            self.selectedHeaderView.delegate = networkingVC
             self.currentViewController = networkingVC
             self.addControllerToContainer(viewController: self.currentViewController, containerView: self.tableContainerView)
         }

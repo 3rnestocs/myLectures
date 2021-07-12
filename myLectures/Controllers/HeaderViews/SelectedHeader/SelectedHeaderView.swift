@@ -7,6 +7,13 @@
 
 import UIKit
 
+protocol SelectedHeaderViewDelegate: AnyObject {
+    func removeAll()
+    func deleteEntry()
+    func addEntry()
+    func shareEntry()
+}
+
 class SelectedHeaderView: UIView {
     
     // MARK: - Outlet
@@ -16,12 +23,14 @@ class SelectedHeaderView: UIView {
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var shareButton: UIButton!
-
+    
+    weak var delegate: SelectedHeaderViewDelegate?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialize()
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initialize()
@@ -30,11 +39,11 @@ class SelectedHeaderView: UIView {
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
-
+    
     private func setupObserver() {
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateView(_ :)), name: .didSelectCells, object: nil)
     }
-
+    
     // MARK: - Helpers
     private func initialize() {
         Bundle.main.loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)
@@ -43,17 +52,24 @@ class SelectedHeaderView: UIView {
         self.contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         setupObserver()
-        
     }
+    
     @IBAction func removeAllButtonTouched(_ sender: UIButton) {
+        self.delegate?.removeAll()
     }
+    
     @IBAction func deleteButtonTouched(_ sender: UIButton) {
+        self.delegate?.deleteEntry()
     }
+    
     @IBAction func addButtonTouched(_ sender: UIButton) {
+        self.delegate?.addEntry()
     }
+    
     @IBAction func shareButtonTouched(_ sender: UIButton) {
+        self.delegate?.shareEntry()
     }
-
+    
     @objc private func updateView(_ notification: Notification) {
         guard let items = notification.object as? Int else { return }
         if items == 1 {
