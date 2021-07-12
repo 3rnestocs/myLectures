@@ -72,6 +72,17 @@ class ContainerViewController: UIViewController {
         self.firstLineView.selectedState = false
         self.secondLineView.selectedState = false
         self.thirdLineView.selectedState = false
+        self.changeHeaderView(shouldChange: false)
+    }
+    
+    private func changeHeaderView(shouldChange: Bool) {
+        if shouldChange {
+            self.myLecturesHeaderView.isHidden = true
+            self.selectedHeaderView.isHidden = false
+        } else {
+            self.myLecturesHeaderView.isHidden = false
+            self.selectedHeaderView.isHidden = true
+        }
     }
 
     // MARK: - Actions
@@ -95,12 +106,6 @@ class ContainerViewController: UIViewController {
 extension ContainerViewController: NetworkingTableViewControllerDelegate {
     func shareSelectedCells(_ indexArray: [IndexPath]) {
         NotificationCenter.default.post(name: .didSelectCells, object: indexArray.count)
-        if !indexArray.isEmpty {
-            self.myLecturesHeaderView.isHidden = true
-            self.selectedHeaderView.isHidden = false
-        } else {
-            self.myLecturesHeaderView.isHidden = false
-            self.selectedHeaderView.isHidden = true
-        }
+        self.changeHeaderView(shouldChange: !indexArray.isEmpty)
     }
 }
