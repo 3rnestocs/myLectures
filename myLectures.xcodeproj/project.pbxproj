@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DDD733F269BCF3B00717FD3 /* MLLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD733E269BCF3B00717FD3 /* MLLineView.swift */; };
 		8DE97745269BA6EA008E61F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97744269BA6EA008E61F4 /* AppDelegate.swift */; };
 		8DE97747269BA6EA008E61F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97746269BA6EA008E61F4 /* SceneDelegate.swift */; };
 		8DE97749269BA6EA008E61F4 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97748269BA6EA008E61F4 /* ContainerViewController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8DDD733E269BCF3B00717FD3 /* MLLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLLineView.swift; sourceTree = "<group>"; };
 		8DE97741269BA6E9008E61F4 /* myLectures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myLectures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE97744269BA6EA008E61F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DE97746269BA6EA008E61F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				8DE9777E269BC0DD008E61F4 /* MLButton.swift */,
+				8DDD733E269BCF3B00717FD3 /* MLLineView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			files = (
 				8DE97795269BC35E008E61F4 /* RecognitionTableViewController.swift in Sources */,
 				8DE97749269BA6EA008E61F4 /* ContainerViewController.swift in Sources */,
+				8DDD733F269BCF3B00717FD3 /* MLLineView.swift in Sources */,
 				8DE97745269BA6EA008E61F4 /* AppDelegate.swift in Sources */,
 				8DE97747269BA6EA008E61F4 /* SceneDelegate.swift in Sources */,
 				8DE97771269BBA47008E61F4 /* NetworkingTableViewController.swift in Sources */,

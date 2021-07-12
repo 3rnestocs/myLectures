@@ -13,11 +13,11 @@ class ContainerViewController: UIViewController {
     @IBOutlet weak var headerContainerView: MyLecturesView!
     @IBOutlet weak var tabBarScrollView: UIScrollView!
     @IBOutlet weak var firstButton: MLButton!
-    @IBOutlet weak var firstLineView: UIView!
+    @IBOutlet weak var firstLineView: MLLineView!
     @IBOutlet weak var secondButton: MLButton!
-    @IBOutlet weak var secondLineView: UIView!
+    @IBOutlet weak var secondLineView: MLLineView!
     @IBOutlet weak var thirdButton: MLButton!
-    @IBOutlet weak var thirdLineView: UIView!
+    @IBOutlet weak var thirdLineView: MLLineView!
     @IBOutlet weak var tableContainerView: UIView!
     
     // MARK: - Properties
@@ -66,20 +66,26 @@ class ContainerViewController: UIViewController {
     private func clearCurrentViewController() {
         self.currentViewController!.view.removeFromSuperview()
         self.currentViewController!.removeFromParent()
+        self.firstLineView.selectedState = false
+        self.secondLineView.selectedState = false
+        self.thirdLineView.selectedState = false
     }
 
     // MARK: - Actions
     @IBAction func firstButtonTouched(_ sender: UIButton) {
         self.clearCurrentViewController()
         self.showNetworkingViewController()
+        self.firstLineView.selectedState = true
     }
     @IBAction func secondButtonTouched(_ sender: UIButton) {
         self.clearCurrentViewController()
         self.showControlViewController()
+        self.secondLineView.selectedState = true
     }
     @IBAction func thirdButtonTouched(_ sender: UIButton) {
         self.clearCurrentViewController()
         self.showRecognitionViewController()
+        self.thirdLineView.selectedState = true
     }
 }
 

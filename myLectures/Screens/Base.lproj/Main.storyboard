@@ -22,13 +22,13 @@
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPe-dy-VZt">
-                                <rect key="frame" x="0.0" y="133.5" width="414" height="44.5"/>
+                                <rect key="frame" x="0.0" y="133.5" width="414" height="46"/>
                                 <subviews>
                                     <stackView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" spacing="16" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRW-Xx-cON">
-                                        <rect key="frame" x="16" y="0.0" width="653" height="35"/>
+                                        <rect key="frame" x="16" y="0.0" width="653" height="36.5"/>
                                         <subviews>
                                             <stackView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fhS-5x-q6Z">
-                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="35"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="36.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivh-OW-ZGM" customClass="MLButton" customModule="myLectures" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="157.5" height="33"/>
@@ -40,17 +40,17 @@
                                                             <action selector="firstButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aDY-8h-lWy"/>
                                                         </connections>
                                                     </button>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Am1-Op-5pg">
-                                                        <rect key="frame" x="0.0" y="33" width="157.5" height="2"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Am1-Op-5pg" customClass="MLLineView" customModule="myLectures" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="33" width="157.5" height="3.5"/>
                                                         <color key="backgroundColor" name="green"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="2" id="ttd-SH-2X8"/>
+                                                            <constraint firstAttribute="height" constant="3.5" id="ttd-SH-2X8"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dZJ-uw-VNA">
-                                                <rect key="frame" x="173.5" y="0.0" width="265" height="35"/>
+                                                <rect key="frame" x="173.5" y="0.0" width="265" height="36.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlx-nZ-U2U" customClass="MLButton" customModule="myLectures" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="265" height="33"/>
@@ -62,17 +62,17 @@
                                                             <action selector="secondButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AOE-hk-TKW"/>
                                                         </connections>
                                                     </button>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ffj-vv-EnG">
-                                                        <rect key="frame" x="0.0" y="33" width="265" height="2"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ffj-vv-EnG" customClass="MLLineView" customModule="myLectures" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="33" width="265" height="3.5"/>
                                                         <color key="backgroundColor" name="bgColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="2" id="BcD-2i-Kfr"/>
+                                                            <constraint firstAttribute="height" constant="3.5" id="BcD-2i-Kfr"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nK4-ek-arq">
-                                                <rect key="frame" x="454.5" y="0.0" width="198.5" height="35"/>
+                                                <rect key="frame" x="454.5" y="0.0" width="198.5" height="36.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7v-Nj-XmJ" customClass="MLButton" customModule="myLectures" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="198.5" height="33"/>
@@ -84,11 +84,11 @@
                                                             <action selector="thirdButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8H-QT-AcC"/>
                                                         </connections>
                                                     </button>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDT-af-TB4">
-                                                        <rect key="frame" x="0.0" y="33" width="198.5" height="2"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDT-af-TB4" customClass="MLLineView" customModule="myLectures" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="33" width="198.5" height="3.5"/>
                                                         <color key="backgroundColor" name="bgColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="2" id="5dz-gl-Jg3"/>
+                                                            <constraint firstAttribute="height" constant="3.5" id="5dz-gl-Jg3"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -122,7 +122,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NPe-dy-VZt" secondAttribute="trailing" id="TiF-dW-lCo"/>
                             <constraint firstItem="NPe-dy-VZt" firstAttribute="top" secondItem="lZx-bK-7KT" secondAttribute="bottom" id="Ued-Gn-xBP"/>
                             <constraint firstItem="NPe-dy-VZt" firstAttribute="leading" secondItem="lZx-bK-7KT" secondAttribute="leading" id="ZU2-Pi-eYH"/>
-                            <constraint firstItem="2zq-SS-mn3" firstAttribute="top" secondItem="NPe-dy-VZt" secondAttribute="bottom" constant="-8" id="eLn-Zo-sKi"/>
+                            <constraint firstItem="2zq-SS-mn3" firstAttribute="top" secondItem="NPe-dy-VZt" secondAttribute="bottom" constant="-9.5" id="eLn-Zo-sKi"/>
                             <constraint firstItem="dZJ-uw-VNA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.64" id="iP1-kS-vMh"/>
                             <constraint firstItem="fhS-5x-q6Z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.38" id="nk8-NO-VTJ"/>
                             <constraint firstItem="2zq-SS-mn3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nsD-Gn-Chb"/>
