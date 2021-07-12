@@ -21,7 +21,7 @@ class ContainerViewController: UIViewController {
     @IBOutlet weak var tableContainerView: UIView!
     
     // MARK: - Properties
-    var networkingVC: NetworkingTableViewController?
+    var currentViewController: UIViewController?
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -32,65 +32,54 @@ class ContainerViewController: UIViewController {
     // MARK: - Setup
     private func setupUI() {
         self.setupButtons()
-        self.updateTableContainer()
-    }
-
-    private func setupHeaderView() {
-        
+        self.showNetworkingViewController()
     }
 
     private func setupButtons() {
         self.firstButton.setTitle("Networking".uppercased(), for: .normal)
-        self.firstButton.setImage(nil, for: .selected)
         self.secondButton.setTitle("Control de asistencia".uppercased(), for: .normal)
         self.thirdButton.setTitle("Reconocimiento".uppercased(), for: .normal)
     }
 
     // MARK: - Helpers
-    private func updateTableContainer() {
-        self.firstButton.isSelected.toggle()
-        if self.firstButton.isSelected {
-            if self.networkingVC == nil {
-                self.networkingVC = NetworkingTableViewController(nibName: NetworkingTableViewController.identifier, bundle: nil)
-            }
-            guard let networkingVC = self.networkingVC else { return }
-            self.addControllerToContainer(viewController: networkingVC, containerView: self.tableContainerView)
+    private func showNetworkingViewController() {
+        if let networkingVC = NetworkingTableViewController(nibName: NetworkingTableViewController.identifier, bundle: nil) as NetworkingTableViewController? {
+            self.currentViewController = networkingVC
+            self.addControllerToContainer(viewController: self.currentViewController, containerView: self.tableContainerView)
         }
     }
 
-    private func setupCurrentView() {
-//        if currentViewButton.isSelected {
-//            if self.mapViewController == nil {
-//                self.mapViewController = AppStoryboard.main.instance.viewController()
-//                self.mapViewController?.delegate = self
-//            }
-//
-//            guard let mapViewController = self.mapViewController else { return }
-//
-//            currentViewController = mapViewController
-//            addControllerToContainer(viewController: mapViewController)
-//            NotificationCenter.default.post(name: .shouldCleanDiscoverCollection, object: nil)
-//        } else {
-//            if self.discoveryViewController == nil {
-//                self.discoveryViewController = AppStoryboard.main.instance.viewController()
-//            }
-//
-//            guard let discoveryViewController = self.discoveryViewController else { return }
-//
-//            currentViewController = discoveryViewController
-//            addControllerToContainer(viewController: discoveryViewController)
-//        }
+    private func showRecognitionViewController() {
+        if let recognitionVC = RecognitionTableViewController(nibName: RecognitionTableViewController.identifier, bundle: nil) as RecognitionTableViewController? {
+            self.currentViewController = recognitionVC
+            self.addControllerToContainer(viewController: self.currentViewController, containerView: self.tableContainerView)
+        }
+    }
+
+    private func showControlViewController() {
+        if let controlVC = ControlTableViewController(nibName: ControlTableViewController.identifier, bundle: nil) as ControlTableViewController? {
+            self.currentViewController = controlVC
+            self.addControllerToContainer(viewController: self.currentViewController, containerView: self.tableContainerView)
+        }
+    }
+
+    private func clearCurrentViewController() {
+        self.currentViewController!.view.removeFromSuperview()
+        self.currentViewController!.removeFromParent()
     }
 
     // MARK: - Actions
     @IBAction func firstButtonTouched(_ sender: UIButton) {
-        print(sender.isSelected)
+        self.clearCurrentViewController()
+        self.showNetworkingViewController()
     }
     @IBAction func secondButtonTouched(_ sender: UIButton) {
-        self.tableContainerView.backgroundColor = .green
+        self.clearCurrentViewController()
+        self.showControlViewController()
     }
     @IBAction func thirdButtonTouched(_ sender: UIButton) {
-        self.tableContainerView.backgroundColor = .yellow
+        self.clearCurrentViewController()
+        self.showRecognitionViewController()
     }
 }
 

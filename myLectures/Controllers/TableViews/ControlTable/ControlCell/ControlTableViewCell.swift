@@ -1,5 +1,5 @@
 //
-//  NetworkingTableViewCell.swift
+//  ControlTableViewCell.swift
 //  myLectures
 //
 //  Created by Ernesto Jose Contreras Lopez on 7/11/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NetworkingTableViewCell: UITableViewCell {
+class ControlTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -16,7 +16,8 @@ class NetworkingTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        print("Cell was selected")
+
+        // Configure the view for the selected state
     }
     
 }
