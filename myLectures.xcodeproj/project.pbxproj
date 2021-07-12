@@ -7,23 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DDD733F269BCF3B00717FD3 /* MLLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD733E269BCF3B00717FD3 /* MLLineView.swift */; };
 		8DE97745269BA6EA008E61F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97744269BA6EA008E61F4 /* AppDelegate.swift */; };
 		8DE97747269BA6EA008E61F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97746269BA6EA008E61F4 /* SceneDelegate.swift */; };
-		8DE97749269BA6EA008E61F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97748269BA6EA008E61F4 /* ViewController.swift */; };
+		8DE97749269BA6EA008E61F4 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97748269BA6EA008E61F4 /* ContainerViewController.swift */; };
 		8DE9774C269BA6EA008E61F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9774A269BA6EA008E61F4 /* Main.storyboard */; };
 		8DE9774E269BA6EC008E61F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9774D269BA6EC008E61F4 /* Assets.xcassets */; };
 		8DE97751269BA6EC008E61F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9774F269BA6EC008E61F4 /* LaunchScreen.storyboard */; };
+		8DE9775B269BA80C008E61F4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9775A269BA80C008E61F4 /* Extensions.swift */; };
+		8DE97768269BB596008E61F4 /* MyLecturesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE97767269BB596008E61F4 /* MyLecturesView.xib */; };
+		8DE9776B269BB5A2008E61F4 /* MyLecturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9776A269BB5A2008E61F4 /* MyLecturesView.swift */; };
+		8DE97771269BBA47008E61F4 /* NetworkingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9776F269BBA47008E61F4 /* NetworkingTableViewController.swift */; };
+		8DE97772269BBA47008E61F4 /* NetworkingTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE97770269BBA47008E61F4 /* NetworkingTableViewController.xib */; };
+		8DE97777269BBAF7008E61F4 /* NetworkingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97775269BBAF7008E61F4 /* NetworkingTableViewCell.swift */; };
+		8DE97778269BBAF7008E61F4 /* NetworkingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE97776269BBAF7008E61F4 /* NetworkingTableViewCell.xib */; };
+		8DE9777F269BC0DD008E61F4 /* MLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9777E269BC0DD008E61F4 /* MLButton.swift */; };
+		8DE97786269BC2F1008E61F4 /* ControlTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97784269BC2F1008E61F4 /* ControlTableViewCell.swift */; };
+		8DE97787269BC2F1008E61F4 /* ControlTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE97785269BC2F1008E61F4 /* ControlTableViewCell.xib */; };
+		8DE9778F269BC328008E61F4 /* ControlTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9778D269BC328008E61F4 /* ControlTableViewController.swift */; };
+		8DE97790269BC328008E61F4 /* ControlTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9778E269BC328008E61F4 /* ControlTableViewController.xib */; };
+		8DE97795269BC35E008E61F4 /* RecognitionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97793269BC35E008E61F4 /* RecognitionTableViewController.swift */; };
+		8DE97796269BC35E008E61F4 /* RecognitionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE97794269BC35E008E61F4 /* RecognitionTableViewController.xib */; };
+		8DE9779A269BC37E008E61F4 /* RecognitionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97798269BC37E008E61F4 /* RecognitionTableViewCell.swift */; };
+		8DE9779B269BC37E008E61F4 /* RecognitionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE97799269BC37E008E61F4 /* RecognitionTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8DDD733E269BCF3B00717FD3 /* MLLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLLineView.swift; sourceTree = "<group>"; };
 		8DE97741269BA6E9008E61F4 /* myLectures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myLectures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE97744269BA6EA008E61F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DE97746269BA6EA008E61F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8DE97748269BA6EA008E61F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DE97748269BA6EA008E61F4 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		8DE9774B269BA6EA008E61F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DE9774D269BA6EC008E61F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DE97750269BA6EC008E61F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DE97752269BA6EC008E61F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DE9775A269BA80C008E61F4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8DE97767269BB596008E61F4 /* MyLecturesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyLecturesView.xib; sourceTree = "<group>"; };
+		8DE9776A269BB5A2008E61F4 /* MyLecturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLecturesView.swift; sourceTree = "<group>"; };
+		8DE9776F269BBA47008E61F4 /* NetworkingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTableViewController.swift; sourceTree = "<group>"; };
+		8DE97770269BBA47008E61F4 /* NetworkingTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkingTableViewController.xib; sourceTree = "<group>"; };
+		8DE97775269BBAF7008E61F4 /* NetworkingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTableViewCell.swift; sourceTree = "<group>"; };
+		8DE97776269BBAF7008E61F4 /* NetworkingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkingTableViewCell.xib; sourceTree = "<group>"; };
+		8DE9777E269BC0DD008E61F4 /* MLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLButton.swift; sourceTree = "<group>"; };
+		8DE97784269BC2F1008E61F4 /* ControlTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlTableViewCell.swift; sourceTree = "<group>"; };
+		8DE97785269BC2F1008E61F4 /* ControlTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlTableViewCell.xib; sourceTree = "<group>"; };
+		8DE9778D269BC328008E61F4 /* ControlTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlTableViewController.swift; sourceTree = "<group>"; };
+		8DE9778E269BC328008E61F4 /* ControlTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlTableViewController.xib; sourceTree = "<group>"; };
+		8DE97793269BC35E008E61F4 /* RecognitionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionTableViewController.swift; sourceTree = "<group>"; };
+		8DE97794269BC35E008E61F4 /* RecognitionTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecognitionTableViewController.xib; sourceTree = "<group>"; };
+		8DE97798269BC37E008E61F4 /* RecognitionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionTableViewCell.swift; sourceTree = "<group>"; };
+		8DE97799269BC37E008E61F4 /* RecognitionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecognitionTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +90,144 @@
 		8DE97743269BA6E9008E61F4 /* myLectures */ = {
 			isa = PBXGroup;
 			children = (
-				8DE97744269BA6EA008E61F4 /* AppDelegate.swift */,
-				8DE97746269BA6EA008E61F4 /* SceneDelegate.swift */,
-				8DE97748269BA6EA008E61F4 /* ViewController.swift */,
-				8DE9774A269BA6EA008E61F4 /* Main.storyboard */,
-				8DE9774D269BA6EC008E61F4 /* Assets.xcassets */,
-				8DE9774F269BA6EC008E61F4 /* LaunchScreen.storyboard */,
 				8DE97752269BA6EC008E61F4 /* Info.plist */,
+				8DE97761269BA83C008E61F4 /* Screens */,
+				8DE97760269BA832008E61F4 /* Controllers */,
+				8DE9777D269BC0CA008E61F4 /* CustomViews */,
+				8DE9775E269BA815008E61F4 /* Base */,
+				8DE97759269BA801008E61F4 /* Utils */,
 			);
 			path = myLectures;
+			sourceTree = "<group>";
+		};
+		8DE97759269BA801008E61F4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8DE9774D269BA6EC008E61F4 /* Assets.xcassets */,
+				8DE9775A269BA80C008E61F4 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8DE9775E269BA815008E61F4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8DE97744269BA6EA008E61F4 /* AppDelegate.swift */,
+				8DE97746269BA6EA008E61F4 /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8DE97760269BA832008E61F4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8DE97748269BA6EA008E61F4 /* ContainerViewController.swift */,
+				8DE97765269BB55F008E61F4 /* HeaderViews */,
+				8DE9776E269BBA2E008E61F4 /* TableViews */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8DE97761269BA83C008E61F4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8DE9774A269BA6EA008E61F4 /* Main.storyboard */,
+				8DE9774F269BA6EC008E61F4 /* LaunchScreen.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8DE97765269BB55F008E61F4 /* HeaderViews */ = {
+			isa = PBXGroup;
+			children = (
+				8DE97766269BB575008E61F4 /* MyLectures */,
+			);
+			path = HeaderViews;
+			sourceTree = "<group>";
+		};
+		8DE97766269BB575008E61F4 /* MyLectures */ = {
+			isa = PBXGroup;
+			children = (
+				8DE9776A269BB5A2008E61F4 /* MyLecturesView.swift */,
+				8DE97767269BB596008E61F4 /* MyLecturesView.xib */,
+			);
+			path = MyLectures;
+			sourceTree = "<group>";
+		};
+		8DE9776E269BBA2E008E61F4 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				8DE97783269BC2B2008E61F4 /* RecognitionTable */,
+				8DE97782269BC2A3008E61F4 /* ControlTable */,
+				8DE9777A269BBAFC008E61F4 /* NetworkingTable */,
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
+		8DE97774269BBADF008E61F4 /* NetworkingCell */ = {
+			isa = PBXGroup;
+			children = (
+				8DE97775269BBAF7008E61F4 /* NetworkingTableViewCell.swift */,
+				8DE97776269BBAF7008E61F4 /* NetworkingTableViewCell.xib */,
+			);
+			path = NetworkingCell;
+			sourceTree = "<group>";
+		};
+		8DE9777A269BBAFC008E61F4 /* NetworkingTable */ = {
+			isa = PBXGroup;
+			children = (
+				8DE9776F269BBA47008E61F4 /* NetworkingTableViewController.swift */,
+				8DE97770269BBA47008E61F4 /* NetworkingTableViewController.xib */,
+				8DE97774269BBADF008E61F4 /* NetworkingCell */,
+			);
+			path = NetworkingTable;
+			sourceTree = "<group>";
+		};
+		8DE9777D269BC0CA008E61F4 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8DE9777E269BC0DD008E61F4 /* MLButton.swift */,
+				8DDD733E269BCF3B00717FD3 /* MLLineView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		8DE97782269BC2A3008E61F4 /* ControlTable */ = {
+			isa = PBXGroup;
+			children = (
+				8DE9778B269BC2FF008E61F4 /* ControlCell */,
+				8DE9778D269BC328008E61F4 /* ControlTableViewController.swift */,
+				8DE9778E269BC328008E61F4 /* ControlTableViewController.xib */,
+			);
+			path = ControlTable;
+			sourceTree = "<group>";
+		};
+		8DE97783269BC2B2008E61F4 /* RecognitionTable */ = {
+			isa = PBXGroup;
+			children = (
+				8DE97789269BC2F4008E61F4 /* RecognitionCell */,
+				8DE97793269BC35E008E61F4 /* RecognitionTableViewController.swift */,
+				8DE97794269BC35E008E61F4 /* RecognitionTableViewController.xib */,
+			);
+			path = RecognitionTable;
+			sourceTree = "<group>";
+		};
+		8DE97789269BC2F4008E61F4 /* RecognitionCell */ = {
+			isa = PBXGroup;
+			children = (
+				8DE97798269BC37E008E61F4 /* RecognitionTableViewCell.swift */,
+				8DE97799269BC37E008E61F4 /* RecognitionTableViewCell.xib */,
+			);
+			path = RecognitionCell;
+			sourceTree = "<group>";
+		};
+		8DE9778B269BC2FF008E61F4 /* ControlCell */ = {
+			isa = PBXGroup;
+			children = (
+				8DE97784269BC2F1008E61F4 /* ControlTableViewCell.swift */,
+				8DE97785269BC2F1008E61F4 /* ControlTableViewCell.xib */,
+			);
+			path = ControlCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +287,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DE97772269BBA47008E61F4 /* NetworkingTableViewController.xib in Resources */,
 				8DE97751269BA6EC008E61F4 /* LaunchScreen.storyboard in Resources */,
+				8DE97787269BC2F1008E61F4 /* ControlTableViewCell.xib in Resources */,
+				8DE9779B269BC37E008E61F4 /* RecognitionTableViewCell.xib in Resources */,
+				8DE97796269BC35E008E61F4 /* RecognitionTableViewController.xib in Resources */,
 				8DE9774E269BA6EC008E61F4 /* Assets.xcassets in Resources */,
+				8DE97778269BBAF7008E61F4 /* NetworkingTableViewCell.xib in Resources */,
 				8DE9774C269BA6EA008E61F4 /* Main.storyboard in Resources */,
+				8DE97768269BB596008E61F4 /* MyLecturesView.xib in Resources */,
+				8DE97790269BC328008E61F4 /* ControlTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +307,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DE97749269BA6EA008E61F4 /* ViewController.swift in Sources */,
+				8DE97795269BC35E008E61F4 /* RecognitionTableViewController.swift in Sources */,
+				8DE97749269BA6EA008E61F4 /* ContainerViewController.swift in Sources */,
+				8DDD733F269BCF3B00717FD3 /* MLLineView.swift in Sources */,
 				8DE97745269BA6EA008E61F4 /* AppDelegate.swift in Sources */,
 				8DE97747269BA6EA008E61F4 /* SceneDelegate.swift in Sources */,
+				8DE97771269BBA47008E61F4 /* NetworkingTableViewController.swift in Sources */,
+				8DE9779A269BC37E008E61F4 /* RecognitionTableViewCell.swift in Sources */,
+				8DE97777269BBAF7008E61F4 /* NetworkingTableViewCell.swift in Sources */,
+				8DE97786269BC2F1008E61F4 /* ControlTableViewCell.swift in Sources */,
+				8DE9776B269BB5A2008E61F4 /* MyLecturesView.swift in Sources */,
+				8DE9777F269BC0DD008E61F4 /* MLButton.swift in Sources */,
+				8DE9778F269BC328008E61F4 /* ControlTableViewController.swift in Sources */,
+				8DE9775B269BA80C008E61F4 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
