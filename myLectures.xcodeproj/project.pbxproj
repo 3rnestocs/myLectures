@@ -14,6 +14,13 @@
 		8DE9774E269BA6EC008E61F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9774D269BA6EC008E61F4 /* Assets.xcassets */; };
 		8DE97751269BA6EC008E61F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9774F269BA6EC008E61F4 /* LaunchScreen.storyboard */; };
 		8DE9775B269BA80C008E61F4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9775A269BA80C008E61F4 /* Extensions.swift */; };
+		8DE97768269BB596008E61F4 /* MyLecturesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE97767269BB596008E61F4 /* MyLecturesView.xib */; };
+		8DE9776B269BB5A2008E61F4 /* MyLecturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9776A269BB5A2008E61F4 /* MyLecturesView.swift */; };
+		8DE97771269BBA47008E61F4 /* NetworkingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9776F269BBA47008E61F4 /* NetworkingTableViewController.swift */; };
+		8DE97772269BBA47008E61F4 /* NetworkingTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE97770269BBA47008E61F4 /* NetworkingTableViewController.xib */; };
+		8DE97777269BBAF7008E61F4 /* NetworkingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97775269BBAF7008E61F4 /* NetworkingTableViewCell.swift */; };
+		8DE97778269BBAF7008E61F4 /* NetworkingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE97776269BBAF7008E61F4 /* NetworkingTableViewCell.xib */; };
+		8DE9777F269BC0DD008E61F4 /* MLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9777E269BC0DD008E61F4 /* MLButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		8DE97750269BA6EC008E61F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DE97752269BA6EC008E61F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DE9775A269BA80C008E61F4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8DE97767269BB596008E61F4 /* MyLecturesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyLecturesView.xib; sourceTree = "<group>"; };
+		8DE9776A269BB5A2008E61F4 /* MyLecturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLecturesView.swift; sourceTree = "<group>"; };
+		8DE9776F269BBA47008E61F4 /* NetworkingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTableViewController.swift; sourceTree = "<group>"; };
+		8DE97770269BBA47008E61F4 /* NetworkingTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkingTableViewController.xib; sourceTree = "<group>"; };
+		8DE97775269BBAF7008E61F4 /* NetworkingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTableViewCell.swift; sourceTree = "<group>"; };
+		8DE97776269BBAF7008E61F4 /* NetworkingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkingTableViewCell.xib; sourceTree = "<group>"; };
+		8DE9777E269BC0DD008E61F4 /* MLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,7 @@
 				8DE97752269BA6EC008E61F4 /* Info.plist */,
 				8DE97761269BA83C008E61F4 /* Screens */,
 				8DE97760269BA832008E61F4 /* Controllers */,
+				8DE9777D269BC0CA008E61F4 /* CustomViews */,
 				8DE9775E269BA815008E61F4 /* Base */,
 				8DE97759269BA801008E61F4 /* Utils */,
 			);
@@ -89,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				8DE97748269BA6EA008E61F4 /* ContainerViewController.swift */,
+				8DE97765269BB55F008E61F4 /* HeaderViews */,
+				8DE9776E269BBA2E008E61F4 /* TableViews */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -100,6 +117,58 @@
 				8DE9774F269BA6EC008E61F4 /* LaunchScreen.storyboard */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		8DE97765269BB55F008E61F4 /* HeaderViews */ = {
+			isa = PBXGroup;
+			children = (
+				8DE97766269BB575008E61F4 /* MyLectures */,
+			);
+			path = HeaderViews;
+			sourceTree = "<group>";
+		};
+		8DE97766269BB575008E61F4 /* MyLectures */ = {
+			isa = PBXGroup;
+			children = (
+				8DE9776A269BB5A2008E61F4 /* MyLecturesView.swift */,
+				8DE97767269BB596008E61F4 /* MyLecturesView.xib */,
+			);
+			path = MyLectures;
+			sourceTree = "<group>";
+		};
+		8DE9776E269BBA2E008E61F4 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				8DE9777A269BBAFC008E61F4 /* NetworkingTable */,
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
+		8DE97774269BBADF008E61F4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8DE97775269BBAF7008E61F4 /* NetworkingTableViewCell.swift */,
+				8DE97776269BBAF7008E61F4 /* NetworkingTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8DE9777A269BBAFC008E61F4 /* NetworkingTable */ = {
+			isa = PBXGroup;
+			children = (
+				8DE9776F269BBA47008E61F4 /* NetworkingTableViewController.swift */,
+				8DE97770269BBA47008E61F4 /* NetworkingTableViewController.xib */,
+				8DE97774269BBADF008E61F4 /* Cell */,
+			);
+			path = NetworkingTable;
+			sourceTree = "<group>";
+		};
+		8DE9777D269BC0CA008E61F4 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8DE9777E269BC0DD008E61F4 /* MLButton.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +228,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DE97772269BBA47008E61F4 /* NetworkingTableViewController.xib in Resources */,
 				8DE97751269BA6EC008E61F4 /* LaunchScreen.storyboard in Resources */,
 				8DE9774E269BA6EC008E61F4 /* Assets.xcassets in Resources */,
+				8DE97778269BBAF7008E61F4 /* NetworkingTableViewCell.xib in Resources */,
 				8DE9774C269BA6EA008E61F4 /* Main.storyboard in Resources */,
+				8DE97768269BB596008E61F4 /* MyLecturesView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +247,10 @@
 				8DE97749269BA6EA008E61F4 /* ContainerViewController.swift in Sources */,
 				8DE97745269BA6EA008E61F4 /* AppDelegate.swift in Sources */,
 				8DE97747269BA6EA008E61F4 /* SceneDelegate.swift in Sources */,
+				8DE97771269BBA47008E61F4 /* NetworkingTableViewController.swift in Sources */,
+				8DE97777269BBAF7008E61F4 /* NetworkingTableViewCell.swift in Sources */,
+				8DE9776B269BB5A2008E61F4 /* MyLecturesView.swift in Sources */,
+				8DE9777F269BC0DD008E61F4 /* MLButton.swift in Sources */,
 				8DE9775B269BA80C008E61F4 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
