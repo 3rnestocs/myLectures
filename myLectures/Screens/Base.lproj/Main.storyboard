@@ -17,6 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RAo-Ft-ryg" customClass="SelectedHeaderView" customModule="myLectures" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="89.5"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZx-bK-7KT" customClass="MyLecturesView" customModule="myLectures" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="89.5"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
@@ -116,9 +120,12 @@
                         <constraints>
                             <constraint firstItem="lZx-bK-7KT" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="5kn-vM-g84"/>
                             <constraint firstItem="nK4-ek-arq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.48" id="6wS-fP-sLg"/>
+                            <constraint firstItem="RAo-Ft-ryg" firstAttribute="bottom" secondItem="lZx-bK-7KT" secondAttribute="bottom" id="87g-jF-14J"/>
                             <constraint firstItem="lZx-bK-7KT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9YZ-b2-EPU"/>
+                            <constraint firstItem="RAo-Ft-ryg" firstAttribute="top" secondItem="lZx-bK-7KT" secondAttribute="top" id="LQ8-nX-wN3"/>
                             <constraint firstItem="lZx-bK-7KT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Lec-gi-i0V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2zq-SS-mn3" secondAttribute="trailing" id="MYH-4d-f9u"/>
+                            <constraint firstItem="RAo-Ft-ryg" firstAttribute="leading" secondItem="lZx-bK-7KT" secondAttribute="leading" id="PQs-RV-HFY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NPe-dy-VZt" secondAttribute="trailing" id="TiF-dW-lCo"/>
                             <constraint firstItem="NPe-dy-VZt" firstAttribute="top" secondItem="lZx-bK-7KT" secondAttribute="bottom" id="Ued-Gn-xBP"/>
                             <constraint firstItem="NPe-dy-VZt" firstAttribute="leading" secondItem="lZx-bK-7KT" secondAttribute="leading" id="ZU2-Pi-eYH"/>
@@ -128,14 +135,16 @@
                             <constraint firstItem="2zq-SS-mn3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nsD-Gn-Chb"/>
                             <constraint firstItem="lZx-bK-7KT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pst-GQ-T4b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2zq-SS-mn3" secondAttribute="bottom" id="shs-U2-Fk7"/>
+                            <constraint firstItem="RAo-Ft-ryg" firstAttribute="trailing" secondItem="lZx-bK-7KT" secondAttribute="trailing" id="wYu-75-Rjf"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="firstButton" destination="Ivh-OW-ZGM" id="GJd-gU-Y13"/>
                         <outlet property="firstLineView" destination="Am1-Op-5pg" id="GmR-U8-hxD"/>
-                        <outlet property="headerContainerView" destination="lZx-bK-7KT" id="CDC-Na-7Hx"/>
+                        <outlet property="myLecturesHeaderView" destination="lZx-bK-7KT" id="IfM-5i-4Kb"/>
                         <outlet property="secondButton" destination="Wlx-nZ-U2U" id="NXd-Ol-9MC"/>
                         <outlet property="secondLineView" destination="Ffj-vv-EnG" id="qNn-c8-r2x"/>
+                        <outlet property="selectedHeaderView" destination="RAo-Ft-ryg" id="Ctx-53-DqO"/>
                         <outlet property="tabBarScrollView" destination="NPe-dy-VZt" id="OIl-1A-Ev7"/>
                         <outlet property="tableContainerView" destination="2zq-SS-mn3" id="7m2-gi-Zu1"/>
                         <outlet property="thirdButton" destination="b7v-Nj-XmJ" id="pp3-iz-Uiq"/>

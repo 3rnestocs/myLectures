@@ -39,3 +39,7 @@ extension DateFormatter {
         return jsonDateFormatter
     }()
 }
+
+extension NSNotification.Name {
+    static let didSelectCells = NSNotification.Name(rawValue: "didSelectCells")
+}
