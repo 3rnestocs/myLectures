@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DropDown
 
 protocol NetworkingTableViewControllerDelegate: AnyObject {
     func shareSelectedCells(_ indexArray: [IndexPath])
@@ -24,6 +25,14 @@ class NetworkingTableViewController: UIViewController {
             self.tableView.reloadData()
         }
     }
+    private var dropDown: DropDown = {
+        let dropDown = DropDown()
+        dropDown.dismissMode = .onTap
+        dropDown.direction = .top
+        dropDown.cellHeight = 36
+        dropDown.backgroundColor = .white
+        return dropDown
+    }()
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -50,6 +59,18 @@ class NetworkingTableViewController: UIViewController {
 
         self.usersArray = [user1, user2, user3, user4, user5, user6, user1, user2, user3, user4, user5, user6, user3, user4, user5, user6]
     }
+
+    private func configureDropDown(aboveCell cell: NetworkingTableViewCell) {
+        dropDown.anchorView = cell.dotsButton
+        dropDown.dataSource = ["Agregar a Contactos", "Llamar"]
+        dropDown.width = cell.frame.width / 2
+        dropDown.topOffset = CGPoint(x: -176, y: -cell.dotsButton.frame.height)
+        dropDown.show()
+
+        dropDown.selectionAction = { (index: Int, item: String) in
+          /// This is used to handle DropDown items selection
+        }
+    }
 }
 
 extension NetworkingTableViewController: UITableViewDataSource {
@@ -63,6 +84,7 @@ extension NetworkingTableViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.setupCell(withUser: user)
+        cell.delegate = self
 
         if self.selectedCells.contains(indexPath) {
             if user.isSelected {
@@ -104,5 +126,11 @@ extension NetworkingTableViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 8
+    }
+}
+
+extension NetworkingTableViewController: NetworkingTableViewCellDelegate {
+    func showDropDown(_ cell: NetworkingTableViewCell) {
+        self.configureDropDown(aboveCell: cell)
     }
 }

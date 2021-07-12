@@ -47,13 +47,13 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sXX-GP-8vo">
-                    <rect key="frame" x="401" y="58" width="96" height="32"/>
+                    <rect key="frame" x="377" y="54" width="120" height="40"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwa-Vw-g4c">
-                            <rect key="frame" x="0.0" y="0.0" width="24" height="32"/>
+                            <rect key="frame" x="0.0" y="0.0" width="32" height="40"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="32" id="W1f-Wc-JQI"/>
-                                <constraint firstAttribute="width" constant="24" id="aEp-Bf-CCX"/>
+                                <constraint firstAttribute="height" constant="40" id="W1f-Wc-JQI"/>
+                                <constraint firstAttribute="width" constant="32" id="aEp-Bf-CCX"/>
                             </constraints>
                             <color key="tintColor" name="Aqua"/>
                             <state key="normal">
@@ -65,10 +65,10 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEv-63-xpe">
-                            <rect key="frame" x="32" y="0.0" width="28" height="32"/>
+                            <rect key="frame" x="40" y="0.0" width="36" height="40"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="32" id="9QZ-su-Xj9"/>
-                                <constraint firstAttribute="width" constant="28" id="Uwb-2A-szd"/>
+                                <constraint firstAttribute="height" constant="40" id="9QZ-su-Xj9"/>
+                                <constraint firstAttribute="width" constant="36" id="Uwb-2A-szd"/>
                             </constraints>
                             <color key="tintColor" name="Aqua"/>
                             <state key="normal">
@@ -80,10 +80,10 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eag-UV-fEp">
-                            <rect key="frame" x="68" y="0.0" width="28" height="32"/>
+                            <rect key="frame" x="84" y="0.0" width="36" height="40"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="28" id="6FE-Z6-jfV"/>
-                                <constraint firstAttribute="height" constant="32" id="L4e-DJ-mIE"/>
+                                <constraint firstAttribute="width" constant="36" id="6FE-Z6-jfV"/>
+                                <constraint firstAttribute="height" constant="40" id="L4e-DJ-mIE"/>
                             </constraints>
                             <color key="tintColor" name="Aqua"/>
                             <state key="normal">

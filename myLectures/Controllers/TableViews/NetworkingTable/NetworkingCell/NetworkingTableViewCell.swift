@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol NetworkingTableViewCellDelegate: AnyObject {
+    func showDropDown(_ cell: NetworkingTableViewCell)
+}
+
 class NetworkingTableViewCell: UITableViewCell {
 
     // MARK: - Outlet
@@ -19,6 +23,7 @@ class NetworkingTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     var currentStatusImage: UIImage?
+    weak var delegate: NetworkingTableViewCellDelegate?
 
     // MARK: - Lifecycle
     override func awakeFromNib() {
@@ -33,7 +38,7 @@ class NetworkingTableViewCell: UITableViewCell {
     }
 
     func showSelectedState() {
-        self.greenBackgroundView.backgroundColor = UIColor(named: "green")?.withAlphaComponent(0.5)
+        self.greenBackgroundView.backgroundColor = UIColor(named: "green")?.withAlphaComponent(0.16)
         self.greenBackgroundView.layer.cornerRadius = self.frame.height / 2.5
         self.statusImageView.image = UIImage(named: "checkCell")
     }
@@ -62,5 +67,6 @@ class NetworkingTableViewCell: UITableViewCell {
 
     // MARK: - Actions
     @IBAction func dotsButtonTouched(_ sender: UIButton) {
+        self.delegate?.showDropDown(self)
     }
 }
