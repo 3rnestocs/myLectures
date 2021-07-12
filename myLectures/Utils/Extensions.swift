@@ -29,3 +29,13 @@ extension UIViewController {
         }
     }
 }
+
+extension DateFormatter {
+
+    static let hourformat: DateFormatter = {
+        let jsonDateFormatter = DateFormatter()
+        jsonDateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        jsonDateFormatter.dateFormat = "hh:mm a"
+        return jsonDateFormatter
+    }()
+}

@@ -64,7 +64,7 @@
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ffj-vv-EnG" customClass="MLLineView" customModule="myLectures" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="33" width="265" height="3.5"/>
-                                                        <color key="backgroundColor" name="bgColor"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="3.5" id="BcD-2i-Kfr"/>
                                                         </constraints>
@@ -86,7 +86,7 @@
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDT-af-TB4" customClass="MLLineView" customModule="myLectures" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="33" width="198.5" height="3.5"/>
-                                                        <color key="backgroundColor" name="bgColor"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="3.5" id="5dz-gl-Jg3"/>
                                                         </constraints>

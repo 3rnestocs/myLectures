@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D852A43269C747C00093817 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D852A42269C747C00093817 /* UserModel.swift */; };
 		8DDD733F269BCF3B00717FD3 /* MLLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD733E269BCF3B00717FD3 /* MLLineView.swift */; };
 		8DE97745269BA6EA008E61F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97744269BA6EA008E61F4 /* AppDelegate.swift */; };
 		8DE97747269BA6EA008E61F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE97746269BA6EA008E61F4 /* SceneDelegate.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D852A42269C747C00093817 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		8DDD733E269BCF3B00717FD3 /* MLLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLLineView.swift; sourceTree = "<group>"; };
 		8DE97741269BA6E9008E61F4 /* myLectures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myLectures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE97744269BA6EA008E61F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D852A41269C747100093817 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8D852A42269C747C00093817 /* UserModel.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		8DE97738269BA6E9008E61F4 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 		8DE97743269BA6E9008E61F4 /* myLectures */ = {
 			isa = PBXGroup;
 			children = (
+				8D852A41269C747100093817 /* Networking */,
 				8DE97752269BA6EC008E61F4 /* Info.plist */,
 				8DE97761269BA83C008E61F4 /* Screens */,
 				8DE97760269BA832008E61F4 /* Controllers */,
@@ -314,6 +325,7 @@
 				8DE97747269BA6EA008E61F4 /* SceneDelegate.swift in Sources */,
 				8DE97771269BBA47008E61F4 /* NetworkingTableViewController.swift in Sources */,
 				8DE9779A269BC37E008E61F4 /* RecognitionTableViewCell.swift in Sources */,
+				8D852A43269C747C00093817 /* UserModel.swift in Sources */,
 				8DE97777269BBAF7008E61F4 /* NetworkingTableViewCell.swift in Sources */,
 				8DE97786269BC2F1008E61F4 /* ControlTableViewCell.swift in Sources */,
 				8DE9776B269BB5A2008E61F4 /* MyLecturesView.swift in Sources */,
