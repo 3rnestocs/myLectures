@@ -13,6 +13,7 @@ class NetworkingTableViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Properties
+    private var selectedCells = [NetworkingTableViewCell]()
     var usersArray = [User]()
     
     // MARK: - Lifecycle
@@ -53,16 +54,35 @@ extension NetworkingTableViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.setupCell(withUser: self.usersArray[indexPath.row])
+        cell.delegate = self
         return cell
     }
 }
 
 extension NetworkingTableViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Cell selected")
-    }
-
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = .clear
+        return headerView
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 8
+    }
+}
+
+extension NetworkingTableViewController: NetworkingTableViewCellDelegate {
+    func addSelectedCell(_ cell: NetworkingTableViewCell) {
+        self.selectedCells.append(cell)
+    }
+    
+    func removeSelectedCell(_ cell: NetworkingTableViewCell) {
+        if let index = self.selectedCells.firstIndex(of: cell) {
+            self.selectedCells.remove(at: index)
+        }
     }
 }

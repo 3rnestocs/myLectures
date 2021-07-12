@@ -24,8 +24,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPe-dy-VZt">
                                 <rect key="frame" x="0.0" y="133.5" width="414" height="46"/>
                                 <subviews>
-                                    <stackView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" spacing="16" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRW-Xx-cON">
-                                        <rect key="frame" x="16" y="0.0" width="653" height="36.5"/>
+                                    <stackView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" spacing="4" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRW-Xx-cON">
+                                        <rect key="frame" x="16" y="0.0" width="629" height="36.5"/>
                                         <subviews>
                                             <stackView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fhS-5x-q6Z">
                                                 <rect key="frame" x="0.0" y="0.0" width="157.5" height="36.5"/>
@@ -50,7 +50,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dZJ-uw-VNA">
-                                                <rect key="frame" x="173.5" y="0.0" width="265" height="36.5"/>
+                                                <rect key="frame" x="161.5" y="0.0" width="265" height="36.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlx-nZ-U2U" customClass="MLButton" customModule="myLectures" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="265" height="33"/>
@@ -72,7 +72,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nK4-ek-arq">
-                                                <rect key="frame" x="454.5" y="0.0" width="198.5" height="36.5"/>
+                                                <rect key="frame" x="430.5" y="0.0" width="198.5" height="36.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7v-Nj-XmJ" customClass="MLButton" customModule="myLectures" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="198.5" height="33"/>
